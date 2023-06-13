@@ -1,6 +1,6 @@
 import {
   AcademicCapIcon,
-  CalendarIcon,
+  //CalendarIcon,
   DownloadIcon,
   FlagIcon,
   MapIcon,
@@ -116,11 +116,14 @@ export const aboutData: About = {
   aboutItems: [
     //{label: 'Location', text: 'Kochi, Kerala', Icon: MapIcon},
     {label: 'Location', text: 'Scarborough, ON', Icon: MapIcon},
-    {label: 'Age', text: '31', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Meliponiculture, Driving', Icon: SparklesIcon},
+    //{label: 'Age', text: '31', Icon: CalendarIcon},
     {label: 'Study', text: 'Mahatma Gandhi University', Icon: AcademicCapIcon},
+   
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
     {label: 'Employment', text: 'Thinkpalm Technologies', Icon: OfficeBuildingIcon},
+    {label: 'Interests', text: 'Meliponiculture', Icon: SparklesIcon},
+    
+    
   ],
 };
 

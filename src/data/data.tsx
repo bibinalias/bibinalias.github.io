@@ -1,19 +1,17 @@
 import {
   AcademicCapIcon,
-  //CalendarIcon,
-  DownloadIcon,
   FlagIcon,
   MapIcon,
   OfficeBuildingIcon,
   SparklesIcon,
+  DownloadIcon,
 } from '@heroicons/react/outline';
 
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-//import TwitterIcon from '../components/Icon/TwitterIcon';
+
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/G120-Angle.png';
 import porfolioImage2 from '../images/portfolio/pngwing.com.png';
@@ -21,13 +19,18 @@ import porfolioImage3 from '../images/portfolio/IMG_20190730_174301.jpg';
 import porfolioImage4 from '../images/portfolio/P_20141224_104128.jpg';
 import porfolioImage5 from '../images/portfolio/refreshable-Braille-display.png';
 import porfolioImage6 from '../images/portfolio/IMG_7714.jpg';
+
+import profilepic from '../images/IMG_17002.jpg';
+import testimonialImage from '../images/testimonial.webp';
+
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 // import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 // import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 // import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/IMG_17002.jpg';
-import testimonialImage from '../images/testimonial.webp';
+
 import {
   About,
   ContactSection,
@@ -40,7 +43,6 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
-
 
 /**
  * Page meta data

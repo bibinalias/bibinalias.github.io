@@ -11,15 +11,15 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/G120-Angle.png';
 import porfolioImage2 from '../images/portfolio/pngwing.com.png';
 import porfolioImage3 from '../images/portfolio/IMG_20190730_174301.jpg';
 import porfolioImage4 from '../images/portfolio/P_20141224_104128.jpg';
 import porfolioImage5 from '../images/portfolio/refreshable-Braille-display.png';
-// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import porfolioImage6 from '../images/portfolio/IMG_7714.jpg';
 // import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 // import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 // import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
@@ -39,6 +39,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import FacebookIcon from '../components/Icon/FacebookIcon';
 
 /**
  * Page meta data
@@ -73,15 +74,15 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      An <strong className="text-stone-100">engineering professional</strong> with strong expertise in creating
-and accomplishing solutions for complicated business problems requiring smart logic. Hands-on experience in
-designing and developing complex algorithms using <strong className="text-stone-100">Embedded C</strong>.
-Experienced in MVC development and automated testing using <strong className="text-stone-100">python</strong>. 
-Strong organizational skills along with the ability to accomplish multiple tasks under extreme pressure, and 
-meet specific deadlines.
+        An <strong className="text-stone-100">engineering professional</strong> with strong expertise in creating
+        and accomplishing solutions for complicated business problems requiring smart logic. Hands-on experience in
+        designing and developing complex algorithms using <strong className="text-stone-100">Embedded C</strong>.
+        Experienced in MVC development and automated testing using <strong className="text-stone-100">python</strong>.
+        Strong organizational skills along with the ability to accomplish multiple tasks under extreme pressure, and
+        meet specific deadlines.
       </p>
     </>
-      ),
+  ),
   actions: [
     {
       //href: 'https://drive.google.com/file/d/1WCUL-6yPTkavEckD3zrple1Fw7o4rVti/view?usp=share_link',
@@ -108,22 +109,22 @@ export const aboutData: About = {
   description: /*`Use this bio section as your way of describing yourself and saying what you do, what technologies you like
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`*/
-  `Highly skilled professional with over 6 years of experience (3 years - vocational) of being an embedded software engineer.
+    `Highly skilled professional with over 6 years of experience (3 years - vocational) of being an embedded software engineer.
   Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and
   implementing efficient test frameworks to streamline processes. Proficient in collaborating with
   cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye
   for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.`,
   aboutItems: [
     //{label: 'Location', text: 'Kochi, Kerala', Icon: MapIcon},
-    {label: 'Location', text: 'Scarborough, ON', Icon: MapIcon},
+    { label: 'Location', text: 'Scarborough, ON', Icon: MapIcon },
     //{label: 'Age', text: '31', Icon: CalendarIcon},
-    {label: 'Study', text: 'Mahatma Gandhi University', Icon: AcademicCapIcon},
-   
-    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
-    {label: 'Employment', text: 'Thinkpalm Technologies', Icon: OfficeBuildingIcon},
-    {label: 'Interests', text: 'Meliponiculture', Icon: SparklesIcon},
-    
-    
+    { label: 'Study', text: 'Mahatma Gandhi University', Icon: AcademicCapIcon },
+
+    { label: 'Nationality', text: 'Indian', Icon: FlagIcon },
+    { label: 'Employment', text: 'Thinkpalm Technologies', Icon: OfficeBuildingIcon },
+    { label: 'Interests', text: 'Meliponiculture, Farming', Icon: SparklesIcon },
+
+
   ],
 };
 
@@ -131,7 +132,7 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
- 
+
   {
     name: 'Domains',
     skills: [
@@ -150,6 +151,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'RTOS',
         level: 7,
+      },
+      {
+        name: 'Device Driver',
+        level: 4,
       },
     ],
   },
@@ -203,13 +208,17 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
- 
+
   {
     name: 'Wireless Communication protocols',
     skills: [
       {
         name: 'MQTT',
         level: 9,
+      },
+      {
+        name: 'Bluetooth',
+        level: 8,
       },
 
       {
@@ -226,10 +235,7 @@ export const skills: SkillGroup[] = [
         level: 5,
       },
 
-      {
-        name: 'Bluetooth',
-        level: 3,
-      },
+
     ],
   },
   {
@@ -260,8 +266,14 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'Smart Welding Glass',
+    description: "Designed eyeglass with Auto-Shutter Technology to safeguard the eyes from arc eye while also measuring the welder's efficiency, working time, welding time, and the number of welds completed per day.",
+    url: 'https://photos.app.goo.gl/fwM8og5xAAwc9kJz9',
+    image: porfolioImage3,
+  },
+  {
     title: 'Driver Behavior Monitoring System',
-    description: 'Designed and developed self-learning algorithms for harsh acceleration/braking and tilt/rash turn using IMU. and convert it to a ready to use portable device',
+    description: 'Designed and developed self-learning algorithms for harsh acceleration/braking and tilt/rash turn using IMU. and convert it to a ready to use portable device.',
     url: 'https://github.com/bibinalias/Driver-Behaviour-Sensing.git',
     image: porfolioImage1,
   },
@@ -272,29 +284,23 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage2,
   },
   {
-    title: 'Smart Welding Glass',
-    description: "Designed eyeglass with Auto-Shutter Technology to safeguard the eyes from arc eye while also measuring the welder's efficiency, working time, welding time, and the number of welds completed per day.",
-    url: '',
-    image: porfolioImage3,
-  },
-  {
     title: 'Touchscreen Web KIOSK',
     description: "An Android touchscreen web kiosk was introduced for the students at Govt. Polytechnic College in Kothamangalam. This kiosk enabled them to access the respective website, www.tekerala.org, allowing them to easily find their profiles and obtain information about their academic status.",
-    url: 'https://timbaker.me',
+    url: '',
     image: porfolioImage4,
   },
   {
     title: 'Refreshable Braille Display',
     description: 'Introduced a solution to enable blind individuals to access Portable Document Format (PDF) files by using braille characters for reading.',
-    url: 'https://timbaker.me',
+    url: '',
     image: porfolioImage5,
   },
-  // {
-  //   title: 'Project title 6',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://timbaker.me',
-  //   image: porfolioImage6,
-  // },
+  {
+    title: 'Automation of chimney',
+    description: 'Conventional chimney used in kerala automated with thermostat and DC 12V Cooling Fans.',
+    url: 'https://photos.app.goo.gl/KZBdGvZWHntwaNRWA',
+    image: porfolioImage6,
+  },
   // {
   //   title: 'Project title 7',
   //   description: 'Give a short description of your project here.',
@@ -335,16 +341,16 @@ export const education: TimelineItem[] = [
     date: 'November 2019',
     location: 'Mar Athanasius College of Engineering - Mahatma Gandhi University, Kerala',
     title: 'Bachelor of Technology Degree in Electronics & Communication Engineering',
-    content: <p>As co-founder of the IOT Club, developed projects using 
+    content: <p>As co-founder of the IOT Club, developed projects using
       Arduino and Raspberry Pi and coordinated the Industrial Entrepreneurship Development Cell, gaining leadership skills
       through various trainings.
-</p>,
+    </p>,
   },
   {
     date: 'April 2015',
     location: 'Board of Technical Education, Kerala',
     title: 'Diploma in Electronics Engineering',
-    content: <p>graduated with First Class Honors with Distinction, specializing in Electronics.</p>,
+    content: <p>graduated with First Class with Distinction, specializing in Electronics.</p>,
   },
 ];
 
@@ -354,57 +360,60 @@ export const experience: TimelineItem[] = [
     location: 'Thinkpalm Technologies',
     title: 'Software Engineer',
     content: (
-      <ul /*style={{ listStyleType: "no-bullet" }}*/>
-        <b>Responsibilities:</b>
-        <li> Develop and maintain Bluetooth and Wi-Fi device drivers, ensuring compatibility with various operating systems and hardware configurations.
-</li><li> Identify and resolve bugs in the firmware of the Wi-Fi device through Coverity bug fixing.
-</li><li> Add new features and functionality to the Wi-Fi and Bluetooth device drivers, based on project requirements.
-</li><li> Collaborate with cross-functional teams to ensure seamless integration of the drivers into the overall system architecture.
-</li><li> Conduct code reviews and perform debugging to optimize the performance and reliability of the drivers.
-</li><li> Utilize tools like Wireshark for network analysis and debugging purposes.
-</li><li> Follow software development best practices and coding standards to ensure high-quality and maintainable code.
-</li><li> Use version control systems, such as git, to manage code repositories and track changes.
-</li><li> Adhere to project schedules and deadlines, effectively managing priorities and multitasking.
-</li><li> Participate in team meetings and provide regular progress updates on assigned tasks.
-</li><li> Stay updated with the latest industry trends and technologies in Bluetooth and Wi-Fi device driver development.
-</li>
-        <b>Key Highlights:</b>  
-       <li> Developed Bluetooth and Wi-Fi device drivers, ensuring compatibility and optimal performance across various systems and hardware configurations.
-       </li><li>Resolved firmware bugs in Wi-Fi devices using Coverity, enhancing stability and reliability.
-       </li><li>Added new features to meet project requirements, improving functionality and user experience.
-       </li><li>Collaborated with cross-functional teams for seamless integration of drivers into system architecture.
-       </li><li>Conducted code reviews, debugging, and optimization to enhance driver performance.
-       </li></ul>
-    ),
+      /* <ul style={{ listStyleType: "no-bullet" }}>
+         { <b>Responsibilities:</b>
+         <li> Develop and maintain Bluetooth and Wi-Fi device drivers, ensuring compatibility with various operating systems and hardware configurations.
+ </li><li> Identify and resolve bugs in the firmware of the Wi-Fi device through Coverity bug fixing.
+ </li><li> Add new features and functionality to the Wi-Fi and Bluetooth device drivers, based on project requirements.
+ </li><li> Collaborate with cross-functional teams to ensure seamless integration of the drivers into the overall system architecture.
+ </li><li> Conduct code reviews and perform debugging to optimize the performance and reliability of the drivers.
+ </li><li> Utilize tools like Wireshark for network analysis and debugging purposes.
+ </li><li> Follow software development best practices and coding standards to ensure high-quality and maintainable code.
+ </li><li> Use version control systems, such as git, to manage code repositories and track changes.
+ </li><li> Adhere to project schedules and deadlines, effectively managing priorities and multitasking.
+ </li><li> Participate in team meetings and provide regular progress updates on assigned tasks.
+ </li><li> Stay updated with the latest industry trends and technologies in Bluetooth and Wi-Fi device driver development.
+ </li> }
+         {<b>Key Highlights:</b>   }
+        { <li> Developed Bluetooth and Wi-Fi device drivers, ensuring compatibility and optimal performance across various systems and hardware configurations.
+        </li><li>Resolved firmware bugs in Wi-Fi devices using Coverity, enhancing stability and reliability.
+        </li><li>Added new features to meet project requirements, improving functionality and user experience.
+        </li><li>Collaborated with cross-functional teams for seamless integration of drivers into system architecture.
+        </li><li>Conducted code reviews, debugging, and optimization to enhance driver performance.
+        </li></ul> }*/
+      <p>
+        As part of my responsibilities, I was actively involved in the development of Bluetooth and Wi-Fi device drivers, prioritizing compatibility and optimal performance across various systems and hardware configurations. By resolving firmware bugs in Wi-Fi devices using Coverity, I significantly improved stability and reliability. Furthermore, I contributed to the project by adding new features that met the requirements, thereby enhancing functionality and improving the overall user experience. Through collaboration with cross-functional teams, I ensured the seamless integration of drivers into the system architecture. I also played a crucial role in conducting code reviews, debugging, and optimization activities to optimize driver performance.
+      </p>),
   },
   {
     date: 'April 2021 - November 2022',
     location: 'GadgEon Smart Systems Inc.',
     title: 'Software Engineer',
     content: (
-     <ul>
-      <b>Responsibilities:</b>
-      <li> Developed, tested, and maintained software applications.
-</li><li> Collaborated with cross-functional teams to gather requirements and design software solutions.
-</li><li> Wrote efficient and clean code according to coding standards and best practices.
-</li><li> Debugged and resolved software defects and issues.
-</li><li> Conducted software testing and quality assurance activities.
-</li><li> Partook in code reviews to ensure code quality and maintainability.
-</li><li> Documented software designs, processes, and procedures.
-</li><li> Provided technical support and troubleshot assistance to end-users.
-</li>
-      <b>Key Highlights:</b>  
-    <li> Designed and developed Model View Controller (MVC) using Python for Test Fixture Application.
-</li><li> Created user interface designs (PyQt5) for Test Fixture Application.
-</li><li> Implemented test automation using Python.
-</li><li> Developed Embedded Linux Applications for MQTT with TLS, ZigBee, and Z-Wave.
-</li><li> Possess basic knowledge of mDNS and Bluez.
-</li><li> Designed and developed a device driver for ADS8668 (SPI).
-</li><li> Experienced in Linux platform and Embedded Linux (Yocto).
-</li><li> Conducted final board bring-up and testing using equipment like a logical analyzer.
-</li>
-</ul>
-      
+      //      <ul>
+      //        <b>Responsibilities:</b>
+      //       <li> Developed, tested, and maintained software applications.
+      // </li><li> Collaborated with cross-functional teams to gather requirements and design software solutions.
+      // </li><li> Wrote efficient and clean code according to coding standards and best practices.
+      // </li><li> Debugged and resolved software defects and issues.
+      // </li><li> Conducted software testing and quality assurance activities.
+      // </li><li> Partook in code reviews to ensure code quality and maintainability.
+      // </li><li> Documented software designs, processes, and procedures.
+      // </li><li> Provided technical support and troubleshot assistance to end-users.
+      // </li> 
+      //       <b>Key Highlights:</b>  
+      //     <li> Designed and developed Model View Controller (MVC) using Python for Test Fixture Application.
+      // </li><li> Created user interface designs (PyQt5) for Test Fixture Application.
+      // </li><li> Implemented test automation using Python.
+      // </li><li> Developed Embedded Linux Applications for MQTT with TLS, ZigBee, and Z-Wave.
+      // </li><li> Possess basic knowledge of mDNS and Bluez.
+      // </li><li> Designed and developed a device driver for ADS8668 (SPI).
+      // </li><li> Experienced in Linux platform and Embedded Linux (Yocto).
+      // </li><li> Conducted final board bring-up and testing using equipment like a logical analyzer.
+      // </li>
+      // </ul>
+      <p>In my role, I had the opportunity to design and develop a Model View Controller (MVC) framework using Python, specifically tailored for a Test Fixture Application. This framework facilitated smooth data handling and interactions within the application. Additionally, I was responsible for creating visually appealing user interface designs utilizing PyQt5, enhancing the overall user experience. To improve efficiency, I implemented test automation procedures using Python, resulting in streamlined testing processes. My work also involved developing Embedded Linux Applications that incorporated MQTT with TLS, ZigBee, and Z-Wave protocols, enabling seamless communication in the field of Internet of Things (IoT). I possess basic knowledge of mDNS and Bluez technologies, which played a role in network discovery and Bluetooth connectivity. Furthermore, I successfully designed and developed a device driver for ADS8668 (SPI), ensuring efficient and reliable communication with the device. Throughout my experience, I have gained proficiency in the Linux platform, particularly in Embedded Linux (Yocto), contributing to my ability to develop and configure systems effectively. Lastly, I conducted final board bring-up and testing using equipment such as a logical analyzer, ensuring optimal performance and functionality of the systems.</p>
+
     ),
   },
   {
@@ -412,32 +421,34 @@ export const experience: TimelineItem[] = [
     location: 'Transight Systems',
     title: 'Firmware Engineer',
     content: (
-      
 
 
-      <ul>
-        <b>Responsibilities:</b>
-<li> Developed and debugged firmware code for embedded systems.
-</li><li> Collaborated with hardware engineers to ensure seamless integration of firmware with hardware components.
-</li><li> Conducted testing and verification of firmware to ensure functionality, reliability, and performance.
-</li><li> Troubleshot and resolved issues related to firmware functionality and compatibility.
-</li><li> Maintained documentation and version control of firmware code.
-</li><li> Collaborated with cross-functional teams to define requirements and specifications for firmware development.
-</li><li> Provided technical support to internal teams and customers regarding firmware-related inquiries.
-</li>
-        <b>Key Highlights:</b>         
-          <li> Attained experience in FreeRTOS 10 and Open CPU, specializing in firmware development.
-</li><li> Designed and developed drivers for W25Q128JV (QSPI) and LIS2DE12 (I2C).
-</li><li> Completed numerous successful projects in the Internet of Things (IoT) field using ARM microcontrollers.
-</li><li> Proficient in communication protocols such as CAN, I2C, QUAD SPI, RS 485, and RS 232.
-</li><li> Developed self-learning algorithms for harsh acceleration/braking and tilt/rash turn using LSM6DS3 and LSM6DSL IMU for AIS 140 devices.
-</li><li> Conducted hardware and firmware testing of various IoT devices, leveraging Python programs for Automotive Research Association of India (ARAI) certification.
-</li><li> Knowledgeable about 4G, 2G modules (EC25, MC60) and GNSS modules (L89, L86).
-</li><li> Skilled in reverse engineering and proficient in equipment like an oscilloscope for final board bring-up and testing.
-</li><li> Proficient in Orcad 9.2 for the schematic design and PCB testing.
-</li>
-      </ul>
-     
+
+      //       <ul>
+      //       <b>Responsibilities:</b>
+      // <li> Developed and debugged firmware code for embedded systems.
+      // </li><li> Collaborated with hardware engineers to ensure seamless integration of firmware with hardware components.
+      // </li><li> Conducted testing and verification of firmware to ensure functionality, reliability, and performance.
+      // </li><li> Troubleshot and resolved issues related to firmware functionality and compatibility.
+      // </li><li> Maintained documentation and version control of firmware code.
+      // </li><li> Collaborated with cross-functional teams to define requirements and specifications for firmware development.
+      // </li><li> Provided technical support to internal teams and customers regarding firmware-related inquiries.
+      // </li> 
+      //          <b>Key Highlights:</b>          
+      //           <li> Attained experience in FreeRTOS 10 and Open CPU, specializing in firmware development.
+      // </li><li> Designed and developed drivers for W25Q128JV (QSPI) and LIS2DE12 (I2C).
+      // </li><li> Completed numerous successful projects in the Internet of Things (IoT) field using ARM microcontrollers.
+      // </li><li> Proficient in communication protocols such as CAN, I2C, QUAD SPI, RS 485, and RS 232.
+      // </li><li> Developed self-learning algorithms for harsh acceleration/braking and tilt/rash turn using LSM6DS3 and LSM6DSL IMU for AIS 140 devices.
+      // </li><li> Conducted hardware and firmware testing of various IoT devices, leveraging Python programs for Automotive Research Association of India (ARAI) certification.
+      // </li><li> Knowledgeable about 4G, 2G modules (EC25, MC60) and GNSS modules (L89, L86).
+      // </li><li> Skilled in reverse engineering and proficient in equipment like an oscilloscope for final board bring-up and testing.
+      // </li><li> Proficient in Orcad 9.2 for the schematic design and PCB testing.
+      // </li>
+      //       </ul>
+      <p>
+        Throughout my work experience, I have gained valuable expertise in firmware development, with a focus on FreeRTOS 10 and Open CPU. This specialization allowed me to effectively design and develop drivers for W25Q128JV (QSPI) and LIS2DE12 (I2C) devices. I have successfully completed numerous projects in the Internet of Things (IoT) field, utilizing ARM microcontrollers to achieve remarkable outcomes. Proficiency in communication protocols such as CAN, I2C, QUAD SPI, RS 485, and RS 232 has been instrumental in enabling seamless data transfer. Leveraging my knowledge of LSM6DS3 and LSM6DSL IMU, I have developed algorithms for harsh acceleration/braking and tilt/rash turn scenarios, specifically for AIS 140 devices. As part of my responsibilities, I conducted comprehensive hardware and firmware testing of various IoT devices, utilizing Python programs to obtain Automotive Research Association of India (ARAI) certification. Additionally, I possess knowledge about 4G and 2G modules (EC25, MC60), as well as GNSS modules (L89, L86). With expertise in reverse engineering and proficiency in equipment such as oscilloscopes, I have successfully conducted final board bring-up and PCB testing. For schematic design and PCB layout, I am proficient in using Orcad 9.2.
+      </p>
 
     ),
   },
@@ -486,10 +497,16 @@ export const contact: ContactSection = {
   description: "I believe that collaboration is key to success. Let's explore how we can work together to achieve great things.",
   items: [
     {
+      type: ContactType.Phone,
+      text: '+1 (647) 547-4975',
+      href: 'tel:+1 (647) 547-4975',
+    },
+    {
       type: ContactType.Email,
       text: 'bibinalias1@gmail.com',
       href: 'mailto:bibinalias1@gmail.com',
     },
+
     {
       type: ContactType.Location,
       //text: 'Kochi Kerala, India',
@@ -502,11 +519,11 @@ export const contact: ContactSection = {
       text: 'Bibin Alias',
       href: 'https://www.linkedin.com/in/bibinalias/',
     },
-    {
-      type: ContactType.Github,
-      text: 'bibinalias',
-      href: 'https://github.com/bibinalias',
-    },
+    // {
+    //   type: ContactType.Github,
+    //   text: 'bibinalias',
+    //   href: 'https://github.com/bibinalias',
+    // },
   ],
 };
 
@@ -514,9 +531,10 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/bibinalias'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/21387178/bibin-alias'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/bibinalias/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/bibin__alias/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/bibin__alias'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/bibinalias' },
+  //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/21387178/bibin-alias'},
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/bibinalias/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/bibin__alias/' },
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/bibin__alias'},
+  { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/bibinaliass' },
 ];

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { AcademicCapIcon, FlagIcon, MapIcon, OfficeBuildingIcon, SparklesIcon, DownloadIcon } from '@heroicons/react/outline';
 import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';

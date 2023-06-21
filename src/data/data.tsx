@@ -1,12 +1,12 @@
 import {
   AcademicCapIcon,
-  //CalendarIcon,
   DownloadIcon,
   FlagIcon,
   MapIcon,
   OfficeBuildingIcon,
   SparklesIcon,
 } from '@heroicons/react/outline';
+
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';

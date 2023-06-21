@@ -1,12 +1,3 @@
-import {
-  AcademicCapIcon,
-  DownloadIcon,
-  FlagIcon,
-  MapIcon,
-  OfficeBuildingIcon,
-  SparklesIcon,
-} from '@heroicons/react/outline';
-
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -39,6 +30,15 @@ import {
   TimelineItem,
 } from './dataDef';
 import FacebookIcon from '../components/Icon/FacebookIcon';
+import {
+  AcademicCapIcon,
+  //CalendarIcon,
+  DownloadIcon,
+  FlagIcon,
+  MapIcon,
+  OfficeBuildingIcon,
+  SparklesIcon,
+} from '@heroicons/react/outline';
 
 /**
  * Page meta data

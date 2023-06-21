@@ -7,7 +7,6 @@ import {
   OfficeBuildingIcon,
   SparklesIcon,
 } from '@heroicons/react/outline';
-
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -116,13 +115,13 @@ export const aboutData: About = {
   for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.`,
   aboutItems: [
     //{label: 'Location', text: 'Kochi, Kerala', Icon: MapIcon},
-    { label: 'Location', text: 'Scarborough, ON', Icon: MapIcon },
+    {label: 'Location', text: 'Scarborough, ON', Icon: MapIcon},
     //{label: 'Age', text: '31', Icon: CalendarIcon},
-    { label: 'Study', text: 'Mahatma Gandhi University', Icon: AcademicCapIcon },
+    {label: 'Study', text: 'Mahatma Gandhi University', Icon: AcademicCapIcon},
 
-    { label: 'Nationality', text: 'Indian', Icon: FlagIcon },
-    { label: 'Employment', text: 'Thinkpalm Technologies', Icon: OfficeBuildingIcon },
-    { label: 'Interests', text: 'Meliponiculture, Farming', Icon: SparklesIcon },
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Employment', text: 'Thinkpalm Technologies', Icon: OfficeBuildingIcon},
+    {label: 'Interests', text: 'Meliponiculture, Farming', Icon: SparklesIcon},
 
 
   ],
@@ -531,10 +530,10 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/bibinalias' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/bibinalias'},
   //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/21387178/bibin-alias'},
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/bibinalias/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/bibin__alias/' },
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/bibinalias/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/bibin__alias/'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/bibin__alias'},
-  { label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/bibinaliass' },
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/bibinaliass'},
 ];

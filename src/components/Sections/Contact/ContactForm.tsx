@@ -55,12 +55,12 @@ const ContactForm: FC = memo(() => {
 
       try {
         await axios.post(
-          "https://api.mailgun.net/v3/sandbox674cf946b913433881426bccdcc2fe1c.mailgun.org/messages",
+          "https://api.mailgun.net/v3/"+MAILGUN_DOMAIN+"/messages",
          form,
           {
             auth: {
               username: 'api',
-              password: 'bd2c58482b1693ac4580a44495d3b12b-135a8d32-cad8c23b',
+              password: MAILGUN_PWD,
             },headers: {'Content-Type': 'multipart/form-data'},
           }
         );

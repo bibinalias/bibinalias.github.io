@@ -75,6 +75,7 @@ Deploying your new site to Vercel is simple, and can be done by following their 
 [![GitHub followers](https://img.shields.io/github/followers/tbakerx.svg?style=social&label=Follow)](https://github.com/tbakerx/)
 ### Maintained By
 
+### Bibin Alias
 <a href="https://www.linkedin.com/in/bibinalias/"><img src="https://github.com/aritraroy/social-icons/blob/master/linkedin-icon.png?raw=true" width="60"></a><a href="https://www.instagram.com/bibin__alias/"><img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60"></a>
 
 

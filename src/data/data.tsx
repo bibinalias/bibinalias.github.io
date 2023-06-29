@@ -88,7 +88,8 @@ export const heroData: Hero = {
     {
       //href: 'https://drive.google.com/file/d/1WCUL-6yPTkavEckD3zrple1Fw7o4rVti/view?usp=share_link',
       //href: 'https://drive.google.com/u/0/uc?id=1WCUL-6yPTkavEckD3zrple1Fw7o4rVti&export=download',
-      href: 'https://drive.google.com/u/0/uc?id=1hJx97IL3oKnUkbyWNy6KdbKkCDmezkXj&export=download',
+      //href: 'https://drive.google.com/u/0/uc?id=1hJx97IL3oKnUkbyWNy6KdbKkCDmezkXj&export=download',
+      href: "https://github.com/bibinalias/bibinalias.github.io/raw/main/src/resume/Bibin Alias Resume.pdf",
       //text: 'Curriculum Vitae',
       text: 'Resume',
       primary: true,
@@ -110,11 +111,7 @@ export const aboutData: About = {
   description: /*`Use this bio section as your way of describing yourself and saying what you do, what technologies you like
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`*/
-    `Highly skilled professional with over 6 years of experience (3 years - vocational) of being an embedded software engineer.
-  Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and
-  implementing efficient test frameworks to streamline processes. Proficient in collaborating with
-  cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye
-  for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.`,
+    `Highly skilled professional with over 6 years (3 years - vocational) of experience of being an embedded software engineer. Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and implementing efficient test frameworks to streamline processes. Proficient in collaborating with cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.`,
   aboutItems: [
     //{label: 'Location', text: 'Kochi, Kerala', Icon: MapIcon},
     { label: 'Location', text: 'Scarborough, ON', Icon: MapIcon },

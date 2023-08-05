@@ -78,7 +78,7 @@ export const heroData: Hero = {
         An <strong className="text-stone-100">engineering professional</strong> with strong expertise in creating
         and accomplishing solutions for complicated business problems requiring smart logic. Hands-on experience in
         designing and developing complex algorithms using <strong className="text-stone-100">Embedded C</strong>.
-        Experienced in MVC development and automated testing using <strong className="text-stone-100">python</strong>.
+        Experienced in MVC development and automated testing using <strong className="text-stone-100">Python</strong>.
         Strong organizational skills along with the ability to accomplish multiple tasks under extreme pressure, and
         meet specific deadlines.
       </p>
@@ -380,9 +380,12 @@ export const experience: TimelineItem[] = [
         </li><li>Collaborated with cross-functional teams for seamless integration of drivers into system architecture.
         </li><li>Conducted code reviews, debugging, and optimization to enhance driver performance.
         </li></ul> }*/
-      <p>
-        As part of my responsibilities, I was actively involved in the development of Bluetooth and Wi-Fi device drivers, prioritizing compatibility and optimal performance across various systems and hardware configurations. By resolving firmware bugs in Wi-Fi devices using Coverity, I significantly improved stability and reliability. Furthermore, I contributed to the project by adding new features that met the requirements, thereby enhancing functionality and improving the overall user experience. Through collaboration with cross-functional teams, I ensured the seamless integration of drivers into the system architecture. I also played a crucial role in conducting code reviews, debugging, and optimization activities to optimize driver performance.
-      </p>),
+      
+       //As part of my responsibilities, I was actively involved in the development of Bluetooth and Wi-Fi device drivers, prioritizing compatibility and optimal performance across various systems and hardware configurations. By resolving firmware bugs in Wi-Fi devices using Coverity, I significantly improved stability and reliability. Furthermore, I contributed to the project by adding new features that met the requirements, thereby enhancing functionality and improving the overall user experience. Through collaboration with cross-functional teams, I ensured the seamless integration of drivers into the system architecture. I also played a crucial role in conducting code reviews, debugging, and optimization activities to optimize driver performance.
+       <p>
+       As part of my responsibilities, I have been actively involved in developing and testing Bluetooth and WLAN features on chipsets, ensuring their quality through robust debugging tools and code review processes. I possess an in-depth understanding of the Bluetooth subsystem source code flow, wireless networking fundamentals, and protocols like GATT, GAP, and HCI. My expertise includes working with debugging tools such as Vim and Wireshark, as well as employing code review processes with Git and Gerrit. Moreover, I successfully resolved firmware bugs in CL8000 Wi-Fi chips using Coverity, enhancing their stability and reliability. I have made significant contributions by adding new features to improve functionality and user experience. One of my accomplishments includes integrating Wi-Fi and Bluetooth functionalities in one CL6000 chip. For my dedication and valuable contributions, I have been awarded and recognized as a valuable team member.
+      </p>
+      ),
   },
   {
     date: 'April 2021 - November 2022',
@@ -411,8 +414,10 @@ export const experience: TimelineItem[] = [
       // </li><li> Conducted final board bring-up and testing using equipment like a logical analyzer.
       // </li>
       // </ul>
-      <p>In my role, I had the opportunity to design and develop a Model View Controller (MVC) framework using Python, specifically tailored for a Test Fixture Application. This framework facilitated smooth data handling and interactions within the application. Additionally, I was responsible for creating visually appealing user interface designs utilizing PyQt5, enhancing the overall user experience. To improve efficiency, I implemented test automation procedures using Python, resulting in streamlined testing processes. My work also involved developing Embedded Linux Applications that incorporated MQTT with TLS, ZigBee, and Z-Wave protocols, enabling seamless communication in the field of Internet of Things (IoT). I possess basic knowledge of mDNS and Bluez technologies, which played a role in network discovery and Bluetooth connectivity. Furthermore, I successfully designed and developed a device driver for ADS8668 (SPI), ensuring efficient and reliable communication with the device. Throughout my experience, I have gained proficiency in the Linux platform, particularly in Embedded Linux (Yocto), contributing to my ability to develop and configure systems effectively. Lastly, I conducted final board bring-up and testing using equipment such as a logical analyzer, ensuring optimal performance and functionality of the systems.</p>
-
+     // In my role, I had the opportunity to design and develop a Model View Controller (MVC) framework using Python, specifically tailored for a Test Fixture Application. This framework facilitated smooth data handling and interactions within the application. Additionally, I was responsible for creating visually appealing user interface designs utilizing PyQt5, enhancing the overall user experience. To improve efficiency, I implemented test automation procedures using Python, resulting in streamlined testing processes. My work also involved developing Embedded Linux Applications that incorporated MQTT with TLS, ZigBee, and Z-Wave protocols, enabling seamless communication in the field of Internet of Things (IoT). I possess basic knowledge of mDNS and Bluez technologies, which played a role in network discovery and Bluetooth connectivity. Furthermore, I successfully designed and developed a device driver for ADS8668 (SPI), ensuring efficient and reliable communication with the device. Throughout my experience, I have gained proficiency in the Linux platform, particularly in Embedded Linux (Yocto), contributing to my ability to develop and configure systems effectively. Lastly, I conducted final board bring-up and testing using equipment such as a logical analyzer, ensuring optimal performance and functionality of the systems.</p>
+<p>
+In my role, I have been responsible for designing and developing the Controller Interface and User Interface for various projects. I have extensive experience in developing Linux applications for MQTT using libmosquitto and mDNS, Zigbee using MGM210, and Bluetooth using bluez interfaces. Additionally, I successfully designed and developed a network co-processor application for Z-Wave communication using ZGM130. My expertise also includes creating device drivers for ADS8668(SPI). I conducted the final board bring-up of HVAC systems and performed thorough testing using equipment like a logic analyzer. I am well-versed in Linux platform and Embedded Linux (Yocto). As part of my work, I designed and developed a Model View Controller (MVC) Test Fixture Application using Python and created user interface designs (PyQt5) for it. Moreover, I have considerable experience in test automation using Python and Embedded C.
+</p>
     ),
   },
   {

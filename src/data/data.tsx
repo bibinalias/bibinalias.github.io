@@ -46,8 +46,8 @@ import FacebookIcon from '../components/Icon/FacebookIcon';
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Resume of Bibin Alias',
-  description: "Interactive resume deployed in cloud (github.io)",
+  title: 'Portfolio - Bibin Alias',
+  description: "Exploring Embedded Software Engineering: Insights and Expertise by Bibin Alias"
 };
 
 /**
@@ -133,7 +133,7 @@ export const aboutData: About = {
 export const skills: SkillGroup[] = [
 
   {
-    name: 'Domains',
+    name: 'Environments',
     skills: [
       {
         name: 'IoT',
@@ -149,7 +149,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'RTOS',
-        level: 7,
+        level: 8,
+      },
+      {
+        name: 'Driver',
+        level: 9,
       },
       {
         name: 'Device Driver',

@@ -112,15 +112,15 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`*/
     //`Highly skilled professional with over 6 years (3 years - vocational) of experience of being an embedded software engineer. Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and implementing efficient test frameworks to streamline processes. Proficient in collaborating with cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.`,
-  "Highly skilled professional with over 7 years (3 years - vocational) of experience of being an embedded software engineer and 5 years of open work permit in Canada. Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and implementing efficient test frameworks to streamline processes. Proficient in collaborating with cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.",
+  "Highly skilled professional with over 5 years of experience of being an embedded software engineer and 5 years of open work permit in Canada. Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and implementing efficient test frameworks to streamline processes. Proficient in collaborating with cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.",
     aboutItems: [
     //{label: 'Location', text: 'Kochi, Kerala', Icon: MapIcon},
-    { label: 'Location', text: 'Scarborough, ON', Icon: MapIcon },
+    //{ label: 'Location', text: 'Scarborough, ON', Icon: MapIcon },
+      { label: 'Location', text: 'Bangalore, IN', Icon: MapIcon },
     //{label: 'Age', text: '31', Icon: CalendarIcon},
     { label: 'Study', text: 'Mahatma Gandhi University', Icon: AcademicCapIcon },
-
     { label: 'Nationality', text: 'Indian', Icon: FlagIcon },
-    { label: 'Employment', text: 'Thinkpalm Technologies', Icon: OfficeBuildingIcon },
+    { label: 'Employment', text: 'Bosch Global Software Technologies', Icon: OfficeBuildingIcon },
     { label: 'Interests', text: 'Meliponiculture, Farming', Icon: SparklesIcon },
 
 
@@ -215,6 +215,10 @@ export const skills: SkillGroup[] = [
   {
     name: 'Wireless Communication protocols',
     skills: [
+            {
+        name: 'Wi-SUN
+        level: 9,
+      },
       {
         name: 'MQTT',
         level: 9,
@@ -358,8 +362,18 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
+    {
+    date: 'November 2023 - Present',
+    location: 'Bosch Global Software Technologies',
+    title: 'Senior Software Engineer',
+    content: (
+       <p>
+         hii
+       </p>
+      ),
+  },
   {
-    date: 'November 2022 - Present',
+    date: 'November 2022 - October 2023',
     location: 'Thinkpalm Technologies',
     title: 'Software Engineer',
     content: (

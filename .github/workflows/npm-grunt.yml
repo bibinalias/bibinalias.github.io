@@ -1,4 +1,4 @@
-name: NodeJS with Grunt
+name: NodeJS Build
 
 on:
   push:
@@ -22,10 +22,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies (including grunt)
-      run: |
-        npm install
-        npm install grunt --save-dev
+    - name: Install dependencies
+      run: npm install
 
-    - name: Build
-      run: npx grunt
+    - name: Build (Next.js)
+      run: npm run build

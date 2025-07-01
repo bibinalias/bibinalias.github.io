@@ -22,7 +22,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Install dependencies (including grunt)
       run: |
         npm install
-        grunt
+        npm install grunt --save-dev
+
+    - name: Build
+      run: npx grunt

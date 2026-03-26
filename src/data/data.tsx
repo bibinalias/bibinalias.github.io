@@ -287,19 +287,16 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Brushless DC Motor Driver',
     description: "Incorporated a feedback system in the driver, ensuring operational stability and maximising the efficiency of the 'patented' Brushless DC Motor.",
-    url: '',
     image: porfolioImage2,
   },
   {
     title: 'Touchscreen Web KIOSK',
     description: "An Android touchscreen web kiosk was introduced for the students at Govt. Polytechnic College in Kothamangalam. This kiosk enabled them to access the respective website, www.tekerala.org, allowing them to easily find their profiles and obtain information about their academic status.",
-    url: '',
     image: porfolioImage4,
   },
   {
     title: 'Refreshable Braille Display',
     description: 'Introduced a solution to enable blind individuals to access Portable Document Format (PDF) files by using braille characters for reading.',
-    url: '',
     image: porfolioImage5,
   },
   {

@@ -216,7 +216,7 @@ export const skills: SkillGroup[] = [
     name: 'Wireless Communication protocols',
     skills: [
             {
-        name: 'Wi-SUN
+        name: 'Wi-SUN',
         level: 9,
       },
       {

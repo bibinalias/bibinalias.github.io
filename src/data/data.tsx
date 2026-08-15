@@ -28,6 +28,11 @@ import porfolioImage6 from '../images/portfolio/IMG_7714.jpg';
 // import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/IMG_17002.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import testimonialJesse from '../images/jesse.jpeg';
+import testimonialVijeesh from '../images/vijeesh.jpeg';
+import testimonialArun from '../images/arun.jpeg';
+import testimonialNithin from '../images/nithin.jpeg';
+import testimonialJustin from '../images/justin.jpeg';
 import {
   About,
   ContactSection,
@@ -75,12 +80,14 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        An <strong className="text-stone-100">engineering professional</strong> with strong expertise in creating
-        and accomplishing solutions for complicated business problems requiring smart logic. Hands-on experience in
-        designing and developing complex algorithms using <strong className="text-stone-100">Embedded C</strong>.
-        Experienced in MVC development and automated testing using <strong className="text-stone-100">Python</strong>.
-        Strong organizational skills along with the ability to accomplish multiple tasks under extreme pressure, and
-        meet specific deadlines.
+        I live where <strong className="text-stone-100">hardware meets code</strong> &mdash; breathing life into
+        silicon and teaching quiet machines to think, sense, and speak. For over{' '}
+        <strong className="text-stone-100">6 years</strong> I have crafted embedded software, firmware, and low-level
+        drivers in <strong className="text-stone-100">Embedded C</strong>, weaving devices together through wireless
+        threads like <strong className="text-stone-100">Wi-SUN, NB-IoT, Bluetooth, Wi-Fi, and Z-Wave</strong>. From
+        bare-metal to RTOS and Embedded Linux &mdash; with a little{' '}
+        <strong className="text-stone-100">Python</strong> to keep every creation honest &mdash; I turn tight
+        deadlines into dependable, elegant products.
       </p>
     </>
   ),
@@ -112,7 +119,7 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`*/
     //`Highly skilled professional with over 6 years (3 years - vocational) of experience of being an embedded software engineer. Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and implementing efficient test frameworks to streamline processes. Proficient in collaborating with cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.`,
-  "Highly skilled professional with over 5 years of experience of being an embedded software engineer and 5 years of open work permit in Canada. Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and implementing efficient test frameworks to streamline processes. Proficient in collaborating with cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.",
+  "Engineering professional with 6+ years of hands-on experience designing and developing complex embedded software, firmware, and low-level device drivers using Embedded C. Proven expertise across wireless networking protocols (Wi-SUN, NB-IoT, Bluetooth, Wi-Fi, Z-Wave), RTOS, and Embedded Linux. Experienced in Python-based automated testing, MVC architecture, and hardware board bring-up. Strong track record of executing complex projects under tight deadlines while ensuring compliance and high reliability.",
     aboutItems: [
     //{label: 'Location', text: 'Kochi, Kerala', Icon: MapIcon},
     //{ label: 'Location', text: 'Scarborough, ON', Icon: MapIcon },
@@ -162,7 +169,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Programing Languages',
+    name: 'Programming Languages',
     skills: [
       {
         name: 'C',
@@ -208,6 +215,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'CAN',
         level: 8,
+      },
+      {
+        name: 'OpenTherm',
+        level: 9,
       },
     ],
   },
@@ -280,7 +291,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Driver Behavior Monitoring System',
-    description: 'Designed and developed self-learning algorithms for harsh acceleration/braking and tilt/rash turn using IMU. and convert it to a ready to use portable device.',
+    description: 'Designed and developed self-learning algorithms for harsh acceleration/braking and tilt/sharp-turn detection using an IMU, and converted it into a ready-to-use portable device.',
     url: 'https://github.com/bibinalias/Driver-Behaviour-Sensing.git',
     image: porfolioImage1,
   },
@@ -304,7 +315,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Automation of chimney',
-    description: 'Conventional chimney used in kerala automated with thermostat and DC 12V Cooling Fans.',
+    description: 'A conventional chimney used in Kerala, automated with a thermostat and DC 12V cooling fans.',
     url: 'https://photos.app.goo.gl/KZBdGvZWHntwaNRWA',
     image: porfolioImage6,
   },
@@ -345,7 +356,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'November 2019',
+    date: '2015 - 2018',
     location: 'Mar Athanasius College of Engineering - Mahatma Gandhi University, Kerala',
     title: 'Bachelor of Technology Degree in Electronics & Communication Engineering',
     content: <p>As co-founder of the IOT Club, developed projects using
@@ -354,10 +365,10 @@ export const education: TimelineItem[] = [
     </p>,
   },
   {
-    date: 'April 2015',
+    date: '2012 - 2015',
     location: 'Board of Technical Education, Kerala',
     title: 'Diploma in Electronics Engineering',
-    content: <p>graduated with First Class with Distinction, specializing in Electronics.</p>,
+    content: <p>Graduated with First Class with Distinction, specializing in Electronics.</p>,
   },
 ];
 
@@ -367,9 +378,9 @@ export const experience: TimelineItem[] = [
     location: 'Bosch Global Software Technologies',
     title: 'Senior Software Engineer',
     content: (
-       <p>
-         hii
-       </p>
+      <p>
+        At Bosch, my work spans two key projects. On the HVAC MH220 Modules (STM32H563, embOS) &mdash; which enable communication between appliances/heat pumps and HMI units &mdash; I designed, implemented, and tested the OpenTherm Plus (Slave) protocol and contributed enhancements to the OpenTherm Master protocol, since the MH220 also serves as a gateway and controlling device. I led certification testing for both the Master and Slave protocols, achieving a 100% pass rate in full compliance with industry standards. On the Smart Meter NIC (ZG28, FreeRTOS) &mdash; providing internet connectivity to smart meters via border routers for Head End System (HES) and Network Monitoring System (NMS) telemetry &mdash; I developed Network Interface Card (NIC) applications on a TCP client/server architecture over Wi-SUN wireless mesh and built a custom UDP tool for diagnostics and monitoring. I also configured Raspberry Pi border routers to establish IPv6 connectivity across Wi-SUN end nodes using Linux D-Bus inter-process communication, and developed secure MQTTS applications for NB-IoT modules.
+      </p>
       ),
   },
   {
@@ -407,7 +418,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'April 2021 - November 2022',
-    location: 'GadgEon Smart Systems Inc.',
+    location: 'Gadgeon Smart Systems',
     title: 'Software Engineer',
     content: (
       //      <ul>
@@ -485,27 +496,27 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Jesse Wilson',
       text: 'Bibin is a highly skilled engineer with expertise in embedded systems development, firmware development, and software design. Bibin has demonstrated strong problem-solving skills, attention to detail, and a deep understanding of embedded systems. He is a quick learner and is always eager to take on new challenges. His ability to work well in a team and communicate complex technical concepts to non-technical stakeholders makes him an excellent asset.',
-      image: "https://www.linkpicture.com/q/jesse_1.jpeg",
+      image: testimonialJesse,
     },
     {
       name: 'Vijeesh PM',
-      text: 'I highly recommend Bibin as an embedded software engineer. During his time at Transight Systems, He demonstrated exceptional technical skills, dedication, and attention to detail in his work.',
-      image: 'https://www.linkpicture.com/q/vijeesh.jpeg',
+      text: 'I highly recommend Bibin as an embedded software engineer. During his time at Transight Systems, he demonstrated exceptional technical skills, dedication, and attention to detail in his work.',
+      image: testimonialVijeesh,
     },
     {
       name: 'Arun Cheriyan',
       text: 'Bibin is a fast learner, capable of comprehending intricate technical concepts in a fraction of the time it would take most people. He possesses a sharp eye for detail and an insatiable curiosity that motivates him to continuously seek out new challenges and acquire new skills. His ability to learn quickly made him an invaluable member of our team, allowing him to take on complex projects and deliver exceptional results in a short amount of time.',
-      image: 'https://www.linkpicture.com/q/arun.jpeg',
+      image: testimonialArun,
     },
     {
       name: 'Nithin Abhimanue',
       text: 'Bibin has a deep understanding of embedded systems, including hardware and software integration. He is adept at working with microcontrollers, sensors, and other embedded devices. He is also proficient in programming languages such as C, Python, and assembly language.',
-      image: 'https://www.linkpicture.com/q/nithin.jpeg',
+      image: testimonialNithin,
     },
     {
       name: 'Justin Joy',
       text: 'Bibin is a talented firmware engineer with dedication to his designs. He has a good understanding of communication protocols. He is experienced with different controller families. I should recommend him for Programming skills, interpersonal skills and problem solving skills as these are essential for a developer.',
-      image: 'https://www.linkpicture.com/q/justin.jpeg',
+      image: testimonialJustin,
     },
   ],
 };
@@ -520,8 +531,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Phone,
-      text: '+1 (647) 547-4975',
-      href: 'tel:+1 (647) 547-4975',
+      text: '+91 85905 50607',
+      href: 'tel:+91 85905 50607',
     },
     {
       type: ContactType.Email,
@@ -532,9 +543,9 @@ export const contact: ContactSection = {
     {
       type: ContactType.Location,
       //text: 'Kochi Kerala, India',
-      text: 'Scarborough ON, Canada',
+      text: 'Bangalore, India',
       //href: 'https://goo.gl/maps/X9pzUczgqcBDZxuw7',
-      href: 'https://goo.gl/maps/LPKjpPHVu3ErHyrc9',
+      href: 'https://maps.google.com/?q=Bangalore,India',
     },
     {
       type: ContactType.LinkedIn,

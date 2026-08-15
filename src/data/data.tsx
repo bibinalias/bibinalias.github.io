@@ -51,8 +51,9 @@ import FacebookIcon from '../components/Icon/FacebookIcon';
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Portfolio - Bibin Alias',
-  description: "Exploring Embedded Software Engineering: Insights and Expertise by Bibin Alias"
+  title: 'Bibin Alias — Embedded Software Engineer',
+  description:
+    'Bibin Alias is an Embedded Software Engineer with 6+ years of experience in firmware, low-level device drivers, Embedded C, RTOS, Embedded Linux, and wireless protocols (Wi-SUN, NB-IoT, Bluetooth, Wi-Fi, Z-Wave). View portfolio, resume, and contact.',
 };
 
 /**
@@ -96,7 +97,7 @@ export const heroData: Hero = {
       //href: 'https://drive.google.com/file/d/1WCUL-6yPTkavEckD3zrple1Fw7o4rVti/view?usp=share_link',
       //href: 'https://drive.google.com/u/0/uc?id=1WCUL-6yPTkavEckD3zrple1Fw7o4rVti&export=download',
       //href: 'https://drive.google.com/u/0/uc?id=1hJx97IL3oKnUkbyWNy6KdbKkCDmezkXj&export=download',
-      href: "https://github.com/bibinalias/bibinalias.github.io/raw/main/src/resume/Bibin Alias Resume.pdf",
+      href: '/Bibin_Alias_Resume.pdf',
       //text: 'Curriculum Vitae',
       text: 'Resume',
       primary: true,

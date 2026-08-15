@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bibinalias.github.io/sitemap.xml

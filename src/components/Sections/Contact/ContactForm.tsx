@@ -18,6 +18,7 @@ const ContactForm: FC = memo(() => {
   );
 
   const [data, setData] = useState<FormData>(defaultData);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   const onChange = useCallback(
     <T extends HTMLInputElement | HTMLTextAreaElement>(event: React.ChangeEvent<T>): void => {
@@ -30,59 +31,48 @@ const ContactForm: FC = memo(() => {
     [data],
   );
 
-  // const handleSendMessage = useCallback(
-  //   async (event: React.FormEvent<HTMLFormElement>) => {
-  //     event.preventDefault();
-  //     /**
-  //      * This is a good starting point to wire up your form submission logic
-  //      * */
-  //     console.log('Data to send: ', data);
-  //   },
-  //   [data],
-  // );
-
-
   const handleSendMessage = useCallback(
-      async (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-      
-
-      const form = new FormData();
-      form.append("from", data.name+ " " + data.email);
-      form.append("to", "Bibin Alias bibinalias1@gmail.com");
-      form.append("subject", "Resume Website Message");
-      form.append("text", data.message);
+    async (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      setStatus('sending');
 
       try {
         await axios.post(
-          "https://api.mailgun.net/v3/"+"sandboxaa"+"18197f6e"+"ab4a7cad8"+"627215e9451dc."+"mail"+"gun.org"+"/messages",
-         form,
+          'https://formsubmit.co/ajax/bibinalias1@gmail.com',
           {
-            auth: {
-              username: 'api',
-              password: "e620691dc3"+"fee1455b"+"e72c720d"+"34ac22-135a8d3"+"2-1cba6e8f",
-            },headers: {'Content-Type': 'multipart/form-data'},
-          }
+            name: data.name,
+            email: data.email,
+            message: data.message,
+            _subject: 'Resume Website Message',
+            _template: 'table',
+          },
+          {headers: {'Content-Type': 'application/json', Accept: 'application/json'}},
         );
-    
-        console.log('Email sent successfully!');
-       // console.log(response.data);
-      } catch (error) {
-        console.error('Error sending email:', error);
-      }
-      console.log('Data to send: ', data);
-      //setData({...data, ...defaultData});
-    },
-    [data],
-  );
 
+        setStatus('success');
+        setData(defaultData);
+      } catch (error) {
+        console.error('Error sending message:', error);
+        setStatus('error');
+      }
+    },
+    [data, defaultData],
+  );
   
   const inputClasses =
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
+      <input
+        className={inputClasses}
+        name="name"
+        onChange={onChange}
+        placeholder="Name"
+        required
+        type="text"
+        value={data.name}
+      />
       <input
         autoComplete="email"
         className={inputClasses}
@@ -91,6 +81,7 @@ const ContactForm: FC = memo(() => {
         placeholder="Email"
         required
         type="email"
+        value={data.email}
       />
       <textarea
         className={inputClasses}
@@ -100,13 +91,23 @@ const ContactForm: FC = memo(() => {
         placeholder="Message"
         required
         rows={6}
+        value={data.message}
       />
       <button
         aria-label="Submit contact form"
-        className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+        className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
+        disabled={status === 'sending'}
         type="submit">
-        Send Message
+        {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>
+      {status === 'success' && (
+        <output className="text-sm text-green-500">Thanks! Your message has been sent.</output>
+      )}
+      {status === 'error' && (
+        <p className="text-sm text-red-500" role="alert">
+          Something went wrong. Please try again or email me directly.
+        </p>
+      )}
     </form>
   );
 });

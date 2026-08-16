@@ -45,6 +45,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import {resumeFileUrl} from './resumeFile';
 import FacebookIcon from '../components/Icon/FacebookIcon';
 
 /**
@@ -88,7 +89,9 @@ export const heroData: Hero = {
         threads like <strong className="text-stone-100">Wi-SUN, NB-IoT, Bluetooth, Wi-Fi, and Z-Wave</strong>. From
         bare-metal to RTOS and Embedded Linux &mdash; with a little{' '}
         <strong className="text-stone-100">Python</strong> to keep every creation honest &mdash; I turn tight
-        deadlines into dependable, elegant products.
+        deadlines into dependable, elegant products. Lately I let{' '}
+        <strong className="text-stone-100">AI copilots</strong> sharpen the craft, turning bold ideas into working
+        silicon faster than ever.
       </p>
     </>
   ),
@@ -97,7 +100,7 @@ export const heroData: Hero = {
       //href: 'https://drive.google.com/file/d/1WCUL-6yPTkavEckD3zrple1Fw7o4rVti/view?usp=share_link',
       //href: 'https://drive.google.com/u/0/uc?id=1WCUL-6yPTkavEckD3zrple1Fw7o4rVti&export=download',
       //href: 'https://drive.google.com/u/0/uc?id=1hJx97IL3oKnUkbyWNy6KdbKkCDmezkXj&export=download',
-      href: '/Bibin_Alias_Resume.pdf',
+      href: resumeFileUrl,
       //text: 'Curriculum Vitae',
       text: 'Resume',
       primary: true,
@@ -120,7 +123,7 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`*/
     //`Highly skilled professional with over 6 years (3 years - vocational) of experience of being an embedded software engineer. Proven expertise in delivering high-quality solutions and identifying critical issues. Adept at designing and implementing efficient test frameworks to streamline processes. Proficient in collaborating with cross-functional teams and providing technical guidance. Strong problem-solving abilities and a keen eye for detail. Seeking high-end tech roles to leverage skills and contribute to cutting-edge projects.`,
-  "Engineering professional with 6+ years of hands-on experience designing and developing complex embedded software, firmware, and low-level device drivers using Embedded C. Proven expertise across wireless networking protocols (Wi-SUN, NB-IoT, Bluetooth, Wi-Fi, Z-Wave), RTOS, and Embedded Linux. Experienced in Python-based automated testing, MVC architecture, and hardware board bring-up. Strong track record of executing complex projects under tight deadlines while ensuring compliance and high reliability.",
+  "Engineering professional with 6+ years of hands-on experience designing and developing complex embedded software, firmware, and low-level device drivers using Embedded C. Proven expertise across wireless networking protocols (Wi-SUN, NB-IoT, Bluetooth, Wi-Fi, Z-Wave), RTOS, and Embedded Linux. Experienced in Python-based automated testing, MVC architecture, and hardware board bring-up. Skilled in AI-assisted engineering with GitHub Copilot and LLM-based tools for accelerated code design and development, automated unit test generation, and technical documentation. Strong track record of executing complex projects under tight deadlines while ensuring compliance and high reliability.",
     aboutItems: [
     //{label: 'Location', text: 'Kochi, Kerala', Icon: MapIcon},
     //{ label: 'Location', text: 'Scarborough, ON', Icon: MapIcon },
@@ -255,6 +258,27 @@ export const skills: SkillGroup[] = [
       },
 
 
+    ],
+  },
+  {
+    name: 'AI-Assisted Engineering',
+    skills: [
+      {
+        name: 'GitHub Copilot',
+        level: 8,
+      },
+      {
+        name: 'LLM-based Tools',
+        level: 8,
+      },
+      {
+        name: 'Automated Unit Test Generation',
+        level: 7,
+      },
+      {
+        name: 'Technical Documentation',
+        level: 8,
+      },
     ],
   },
   {

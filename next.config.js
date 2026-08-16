@@ -1,5 +1,9 @@
 /* eslint-env node */
 
+// Resolve the resume PDF from /public (newest file whose name contains "resume")
+// and regenerate src/data/resumeFile.ts + sync the sitemap before the build runs.
+require('./scripts/resolve-resume')();
+
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
   webpack: config => {

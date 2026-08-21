@@ -46,6 +46,15 @@ const personJsonLd = {
   ],
 };
 
+// WebSite schema gives Google an explicit site name (otherwise a *.github.io host is labelled "GitHub").
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Bibin Alias',
+  alternateName: 'Bibin Alias - Embedded Software Engineer',
+  url: SITE_URL,
+};
+
 const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
   const {asPath: pathname} = useRouter();
   const canonicalUrl = `${SITE_URL}${pathname}`;
@@ -65,11 +74,13 @@ const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         <link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png" />
+        <link href="/icon-192.png" rel="icon" sizes="192x192" type="image/png" />
         <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
         <link href="/site.webmanifest" rel="manifest" />
 
         {/* Open Graph : https://ogp.me/ */}
         <meta content="website" property="og:type" />
+        <meta content="Bibin Alias" property="og:site_name" />
         <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={canonicalUrl} property="og:url" />
@@ -84,6 +95,12 @@ const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
         {/* Structured data (schema.org Person) for rich results / recruiter discoverability */}
         <script
           dangerouslySetInnerHTML={{__html: JSON.stringify(personJsonLd)}}
+          type="application/ld+json"
+        />
+
+        {/* Structured data (schema.org WebSite) to set the site name shown in Google results */}
+        <script
+          dangerouslySetInnerHTML={{__html: JSON.stringify(websiteJsonLd)}}
           type="application/ld+json"
         />
       </Head>
